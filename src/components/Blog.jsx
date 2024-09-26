@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <>
         <div className='blog-page'>
-            <div className='blogs'>
+            <div className='flex flex-wrap justify-center justify-items-center align-items: center;'>
                 <BlogCard
                     imgSrc='https://picsum.photos/id/10/300/200'
                     imgAlt='The Lazy Blog'

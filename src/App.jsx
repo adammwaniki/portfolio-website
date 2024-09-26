@@ -10,12 +10,13 @@ export default function App() {
 
   return (
     <>
-      <HomePage/>
-      <About/>
-      <Projects/>
-      <Blog/>
-      <Navbar/>
-      
+      <div className="bg-[#FFFFF0]">
+        <HomePage/>
+        <About/>
+        <Projects/>
+        <Blog/>
+        <Navbar/>
+      </div>
     </>
   )
 }
