@@ -13,7 +13,7 @@ export default function BlogCard({
         <div className='blog-card-img'>
             {imgSrc && imgAlt && (<img src={imgSrc} alt={imgAlt}/>)} 
         </div>
-        <div className='card-body'>
+        <div className='blog-card-body'>
             {title && (<h1 className='blog-card-title'>{title}</h1>)}
             {description && (<p className='blog-card-description'>{description}</p>)}
             {buttonText && link && (<a href={link} className='blog-card-btn'>{buttonText}</a>)}
