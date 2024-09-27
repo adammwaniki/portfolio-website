@@ -10,7 +10,7 @@ export default function BlogCard({
 }) {
   return (
     <div className='blog-card-container'>
-      <div className='flex flex-col p-[2em]'>
+      <div className='flex flex-col p-[2em] font-display'>
         <div className="rounded-xl overflow-hidden">
             {imgSrc && imgAlt && (<img src={imgSrc} alt={imgAlt}/>)} 
         </div>

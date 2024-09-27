@@ -11,6 +11,14 @@ export default {
         'body': ['Allerta Stencil'],
       }
     },
+    screens: {
+      'xsm': '576px',
+      // => @media (min-width: 576px) { ... }
+      'xxsm': '480px',
+      // => @media (min-width: 480px) { ... }
+      'xxxsm': '360px',
+      // => @media (min-width: 360px) { ... }
+    }
   },
   plugins: [],
 }

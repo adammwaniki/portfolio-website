@@ -4,8 +4,8 @@ import ProjectCard from './cards/ProjectCard'
 export default function Projects() {
   return (
     <>
-        <div className='projects-page'>
-            <div className='flex flex-wrap justify-center justify-items-center align-items: center;'>
+        <div className='projects-page '>
+            <div className='flex flex-wrap justify-center justify-items-center align-items: center; min-h-screen'>
                 <ProjectCard
                     imgSrc='https://picsum.photos/id/1005/300/200'
                     imgAlt='SendIT Courier Service'

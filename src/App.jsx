@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage"
 import Projects from "./components/Projects"
 import Blog from "./components/Blog"
 import Navbar from "./components/Navbar"
+import DateTimeDisplay from "./components/DateTimeDisplay"
 
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <>
       <div className="bg-[#FFFFF0]">
+        <DateTimeDisplay/>
         <HomePage/>
         <About/>
         <Projects/>

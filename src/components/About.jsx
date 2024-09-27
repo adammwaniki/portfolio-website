@@ -4,7 +4,7 @@ import TechStackCard from "./cards/TechStackCard"
 export default function About() {
   return (
     <>
-      <div className="about-page">
+      <div className="flex flex-col min-h-screen font-display">
         <div className="about-page-text-content">
           <p>
             Hi!  I&#39;m <span>Adam Mwaniki.</span> 
@@ -23,43 +23,45 @@ export default function About() {
             business needs and provide a positive user experience.
           </p>
         </div>
-        <div>
+        <div className="">
           <h2>My Tech Stack</h2>
-          <TechStackCard 
-          imgSrc = "src/assets/icons8-figma-48.png"
-          imgAlt ="Figma Icon"
-          title ="Figma"
-          />
-          <TechStackCard 
-          imgSrc = "src/assets/react.svg"
-          imgAlt ="React JS Icon"
-          title ="React JS"
-          />
-          <TechStackCard 
-          imgSrc = "src/assets/icons8-javascript-48.png"
-          imgAlt ="Javascript Icon"
-          title ="JavaScript"
-          />
-          <TechStackCard 
-          imgSrc = "src/assets/icons8-python-48.png"
-          imgAlt ="Python Icon"
-          title ="Python"
-          />
-          <TechStackCard 
-          imgSrc = "src/assets/icons8-postgresql-48.png"
-          imgAlt ="Postgresql Icon"
-          title ="PostgreSQL"
-          />
-          <TechStackCard 
-          imgSrc = "src/assets/icons8-git-50.png"
-          imgAlt ="Git Icon"
-          title ="Git"
-          />
-          <TechStackCard 
-          imgSrc = "src/assets/icons8-flask-50.png"
-          imgAlt ="Flask Icon"
-          title ="Flask"
-          />
+          <div className="flex flex-wrap gap-[2em] lg:justify-end md:justify-center sm:justify-center">
+            <TechStackCard 
+            imgSrc = "src/assets/icons8-figma-48.png"
+            imgAlt ="Figma Icon"
+            title ="Figma"
+            />
+            <TechStackCard 
+            imgSrc = "src/assets/react.svg"
+            imgAlt ="React JS Icon"
+            title ="React JS"
+            />
+            <TechStackCard 
+            imgSrc = "src/assets/icons8-javascript-48.png"
+            imgAlt ="Javascript Icon"
+            title ="JavaScript"
+            />
+            <TechStackCard 
+            imgSrc = "src/assets/icons8-python-48.png"
+            imgAlt ="Python Icon"
+            title ="Python"
+            />
+            <TechStackCard 
+            imgSrc = "src/assets/icons8-postgresql-48.png"
+            imgAlt ="Postgresql Icon"
+            title ="PostgreSQL"
+            />
+            <TechStackCard 
+            imgSrc = "src/assets/icons8-git-50.png"
+            imgAlt ="Git Icon"
+            title ="Git"
+            />
+            <TechStackCard 
+            imgSrc = "src/assets/icons8-flask-50.png"
+            imgAlt ="Flask Icon"
+            title ="Flask"
+            />
+          </div>
         </div>
         <div className="contact-me-section">
           <p>Download My CV</p>
