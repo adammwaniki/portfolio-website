@@ -72,7 +72,9 @@ export default function About() {
                 </div>
                 <div className="font-accents font-medium flex flex-col gap-[2vh]">
                   <button id="cv-download" className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">Download my Resume</button>
-                  <button id="github-link" className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">Check out my Github</button>
+                  <button id="github-link" className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">
+                    <a href="https://github.com/adammwaniki">Check out my Github</a>
+                    </button>
                   <button id="email-link" className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">Email Me</button>
                   <button className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">adamndegwa@protonmail.com</button>
                 </div>

@@ -4,8 +4,8 @@ export default function Blog() {
   return (
     <>
         <section id="blog">
-            <div className='blog-page'>
-                <div className='flex flex-wrap justify-center align-items: center;'>
+            <div className='flex justify-center min-h-screen'>
+                <div className='flex flex-wrap justify-center  p-1 mt-[16vh]'>
                     <BlogCard
                         imgSrc='https://picsum.photos/id/10/300/200'
                         imgAlt='The Lazy Blog'

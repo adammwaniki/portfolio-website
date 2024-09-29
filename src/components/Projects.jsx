@@ -5,8 +5,8 @@ export default function Projects() {
   return (
     <>
         <section id="projects">
-            <div className='projects-page '>
-                <div className='flex flex-wrap justify-center justify-items-center align-items: center; min-h-screen'>
+            <div className='flex justify-center min-h-screen '>
+                <div className='flex flex-wrap justify-center  p-1 mt-[16vh]'>
                     <ProjectCard
                         imgSrc='https://picsum.photos/id/1005/300/200'
                         imgAlt='SendIT Courier Service'
