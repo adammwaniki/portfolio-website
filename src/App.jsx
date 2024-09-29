@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <>
-      <div className="bg-[#FFFFF0]">
+      <div className="bg-[#FFFFF0] w-lvw">
         <DateTimeDisplay/>
         <HomePage/>
         <About/>

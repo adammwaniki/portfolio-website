@@ -1,46 +1,47 @@
 export default function HomePage() {
   return (
     <>
-      <div className="flex flex-col min-h-screen font-display">
-        {/* Section for Name and Title */}
-        <div className="flex font-bold lg:justify-start md:justify-center sm:justify-center xsm:justify-center xxsm:justify-center xxxsm:justify-center items-center" style={{ minHeight: '50vh' }}>
-          <div className="flex flex-col lg:justify-center lg:items-start mx-auto lg:ml-[129px] md:ml-[50px] sm:ml-[20px]">
-            <h1 className="text-center" style={{ fontSize: '6vw', color: '#40240B', lineHeight: '0.5' }}>
-              Mwaniki
-              <br />
-              <span style={{ fontSize: '2.85vw', color: '#7B3E19', lineHeight: '0.75' }}>
-                <span className="font-semibold">the</span> <br /> Software Engineer
-              </span>
-            </h1>
-          </div>
-        </div>
+      {/* Homepage container */}
+      <div className="flex font-display min-h-screen justify-center w-full ">  
+        {/* subcontainer for all */}
+        <div className="flex flex-wrap xxxxsm:h-svh sm:justify-evenly sm:flex-row xxxxsm:flex-col xxxxsm:justify-center xxxxsm:content-center  font-bold w-11/12 pt-[17.6vh] md:pb-[11.7vh] ">
+          {/* Container for Name, Title and Description */}
+          <div className="flex flex-col 2xl:gap-32 xl:gap-24 lg:gap-20 md:gap-20 sm:gap-14  xxsm:gap-10 xxxsm:gap-6 xxxxsm:gap-4 ">
+            {/* Section for Name and Title */}
+              <div className=" lg:flex lg:justify-start mt-10 ">
+                <h1 className="text-center sm:text-[6vw] sm:leading-[0.5] xxxxsm:text-5xl xxxxsm:leading-7 text-[#40240B]">
+                  Mwaniki
+                  <br />
+                  <span className="sm:text-[2.85vw] sm:leading-[0.75] xxxxsm:text-2xl xxxxsm:leading-[1rem] text-[#7B3E19] ">
+                    <span className="font-semibold">the</span> <br /> Software Engineer
+                  </span>
+                </h1>
+              </div>
 
-        {/* Section for Description */}
-        <div className="flex justify-center items-center font-semibold" style={{ height: '10vh' }}>
-          <p className="text-[1.8vw] text-[#C2714F] text-left px-[5vw]">
-            Harnessing the power of <span className="text-[#7B3E19]">code</span> to <br />
-            make <span className="text-[#7B3E19]">software magic</span> happen -- 
-            <br />
-            <span>one spell at a time</span>
-          </p>
-        </div>
-
-        {/* Section for Image and Name */}
-        <div className="flex lg:flex-row flex-col items-center justify-between lg:w-full">
-          <div className="hidden lg:flex lg:w-6/12"></div>
-          <div className="flex flex-col items-end lg:w-6/12 w-full relative">
-            <img
-              loading="lazy"
-              src="src/assets/1_Clipped_image_20240920_165434.png"
-              className="object-right w-[27%] h-[29%]  mr-[20%]" // Adjust max-width as needed
-              style={{ maxHeight: '100%', height: 'auto' }}
-            />
-            {/* Name positioned at the bottom right of the image */}
-            <div className="absolute bottom-0 right-0 text-[2.4vw] font-bold leading-0 text-yellow-900 mt-2 lg:mt-0 mr-[13%]">
-              <p>Adam</p>
-              <p>Mwaniki</p>
+            {/* Section for Description */}
+            <div className="font-semibold flex sm:text-left xxxxsm:justify-center">
+              <p className=" sm:text-[2vw]  xxxxsm:text-base  text-[#C2714F]  px-[5vw]">
+                Harnessing the power of <span className="text-[#7B3E19]">code</span> to <br />
+                make <span className="text-[#7B3E19]">software magic</span> happen -- 
+                <br />
+                <span>one spell at a time</span>
+              </p>
             </div>
           </div>
+            {/* Section for Image and Name */}
+            <div className="flex  ">      
+                <img
+                  loading="lazy"
+                  src="src/assets/1_Clipped_image_20240920_165434.png"
+                  className="  w-auto 2xl:h-[70vh] xl:h-[70vh] lg:h-[70vh] md:h-[70vh] sm:h-[70vh] xsm:h-[50vh] xxsm:h-[50vh] xxxxsm:h-[30vh]  "  
+                />
+                {/* I shall fix this image shortly*/}
+                
+                {/* Name positioned at the bottom right of the image */}
+                  <p className="grid place-items-end leading-[1.08] md:text-[1.3rem] xxxsm:text-[1.15rem] font-bold  text-yellow-900">Adam 
+                    <br/>
+                  Mwaniki</p>
+            </div>
         </div>
       </div>
     </>

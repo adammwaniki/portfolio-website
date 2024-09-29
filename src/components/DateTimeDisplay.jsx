@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 
 const DateTimeDisplay = () => {
   const [localTime, setLocalTime] = useState('');
@@ -29,7 +29,7 @@ const DateTimeDisplay = () => {
   }, []);
 
   return (
-    <div className={`fixed top-0 right-0 p-4 font-body`}>
+    <div className={`fixed top-0 right-0 p-4 font-accents`}>
       <div className='flex flex-col'>
         <div className={`flex justify-between items-center w-full text-[#289661] mb-4`}>
           <div className="gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 mr-2">
@@ -53,7 +53,7 @@ const DateTimeDisplay = () => {
 };
 
 DateTimeDisplay.propTypes = {
-  label: PropTypes.string.isRequired,
+  
 };
 
 export default DateTimeDisplay;
