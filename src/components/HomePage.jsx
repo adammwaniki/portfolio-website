@@ -1,18 +1,19 @@
 export default function HomePage() {
   return (
     <>
+    <section id="home">
       {/* Homepage container */}
-      <div className="flex font-display min-h-screen justify-center w-full ">  
+      <div className="flex font-display min-h-screen max-h-svh justify-center w-full ">  
         {/* subcontainer for all */}
-        <div className="flex flex-wrap xxxxsm:h-svh sm:justify-evenly sm:flex-row xxxxsm:flex-col xxxxsm:justify-center xxxxsm:content-center  font-bold w-11/12 pt-[17.6vh] md:pb-[11.7vh] ">
+        <div className="flex flex-wrap xxxxsm:h-svh sm:gap-[0.8vh] xsm:gap-[3vh] xxsm:gap-[7vh] xxxsm:gap-[12vh] xxxxsm:gap-[30vw] sm:justify-evenly sm:flex-row xxxxsm:flex-col xxxxsm:justify-center xxxxsm:content-center  font-bold w-11/12 pt-[17.6vh] md:pb-[11.7vh] ">
           {/* Container for Name, Title and Description */}
           <div className="flex flex-col 2xl:gap-32 xl:gap-24 lg:gap-20 md:gap-20 sm:gap-14  xxsm:gap-10 xxxsm:gap-6 xxxxsm:gap-4 ">
             {/* Section for Name and Title */}
               <div className=" lg:flex lg:justify-start mt-10 ">
-                <h1 className="text-center sm:text-[6vw] sm:leading-[0.5] xxxxsm:text-5xl xxxxsm:leading-7 text-[#40240B]">
+                <h1 className="text-center xsm:text-[6vw] xsm:leading-[0.5] xxxxsm:text-5xl xxxxsm:leading-7 text-[#40240B]">
                   Mwaniki
                   <br />
-                  <span className="sm:text-[2.85vw] sm:leading-[0.75] xxxxsm:text-2xl xxxxsm:leading-[1rem] text-[#7B3E19] ">
+                  <span className="xsm:text-[2.85vw] xsm:leading-[0.75] xxxxsm:text-2xl xxxxsm:leading-[1rem] text-[#7B3E19] ">
                     <span className="font-semibold">the</span> <br /> Software Engineer
                   </span>
                 </h1>
@@ -33,7 +34,7 @@ export default function HomePage() {
                 <img
                   loading="lazy"
                   src="src/assets/1_Clipped_image_20240920_165434.png"
-                  className="  w-auto 2xl:h-[70vh] xl:h-[70vh] lg:h-[70vh] md:h-[70vh] sm:h-[70vh] xsm:h-[50vh] xxsm:h-[50vh] xxxxsm:h-[30vh]  "  
+                  className="  w-auto  md:h-[70vh] sm:h-[60vh] xxsm:h-[50vh] xxxxsm:h-[30vh]  "  
                 />
                 {/* I shall fix this image shortly*/}
                 
@@ -44,6 +45,7 @@ export default function HomePage() {
             </div>
         </div>
       </div>
+    </section>
     </>
   );
 }
