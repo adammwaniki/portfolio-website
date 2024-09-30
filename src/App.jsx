@@ -4,7 +4,7 @@ import Projects from "./components/Projects"
 import Blog from "./components/Blog"
 import Navbar from "./components/Navbar"
 import DateTimeDisplay from "./components/DateTimeDisplay"
-//import { Routes, Route, Navigate } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 
 export default function App() {
@@ -12,14 +12,15 @@ export default function App() {
 
   return (
     <>
-      <div className="bg-[#FFFFF0] w-lvw">
-        <DateTimeDisplay/>
-        <HomePage/>
-        <About/>
-        <Projects/>
-        <Blog/>
-        <Navbar/>
-      </div>
+      <Router basename="/portfolio-website">
+        <div className="bg-[#FFFFF0] w-lvw">
+          <DateTimeDisplay/>
+          <Navbar/>
+          <Routes>
+            <Route path="/" element={<><HomePage />, <About />, <Projects />, <Blog /></>} />
+          </Routes>
+        </div>
+      </Router>
     </>
   )
 }
