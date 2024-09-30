@@ -1,5 +1,7 @@
-//import Navbar from "./Navbar"
+import { useState } from 'react';
+import EmailCard from './EmailCard';
 import TechStackCard from "./cards/TechStackCard"
+
 import figmaIcon from '../assets/images/icons8-figma-48.png';
 import reactIcon from '../assets/images/react.svg';
 import javascriptIcon from '../assets/images/icons8-javascript-48.png';
@@ -10,9 +12,19 @@ import flaskIcon from '../assets/images/icons8-flask-50.png';
 
 
 export default function About() {
+  const [showEmailCard, setShowEmailCard] = useState(false);
+
+  const handleEmailClick = () => {
+    setShowEmailCard(true);
+  };
+
+  const handleCloseEmailCard = () => {
+    setShowEmailCard(false);
+  };
+
   return (
     <>
-      <section id="about">
+      <section id="about" className={showEmailCard ? 'blur-sm' : ''}>
       {/* Page container*/}
         <div className="flex min-h-screen justify-center font-display ">
           {/* Page subcontainer */}
@@ -22,7 +34,7 @@ export default function About() {
               {/*About page text content */}
               <div className=" flex flex-col sm:items-start xxxxsm:items-center text-left gap-[4vh] sm:basis-1/2 sm:text-[2vw] xxxxsm:text-base font-semibold text-[#7B3E19]">
                 <p >
-                  Hi!  I&#39;m <span className="text-[#007AFF]">Adam Mwaniki.</span> 
+                  Hi!  I&#39;m <span className="text-[#007AFF] font-bold">Adam Mwaniki.</span> 
                 </p>
                 <p >
                   I develop <span className="text-[#007AFF]">full-stack</span> applications with a <br/> passion for 
@@ -83,14 +95,15 @@ export default function About() {
                   <button id="github-link" className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">
                     <a href="https://github.com/adammwaniki">Check out my Github</a>
                     </button>
-                  <button id="email-link" className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">Email Me</button>
-                  <button className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">adamndegwa@protonmail.com</button>
+                  <button id="email-link" onClick={handleEmailClick} className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">Email Me</button>
+                  <p className="flex justify-between items-center w-full text-[#C2714F] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 ">adamndegwa@protonmail.com</p>
                 </div>
               </div>
             </div>
           </div>
         </div>  
       </section>
+      {showEmailCard && <EmailCard onClose={handleCloseEmailCard} />}
     </>
   )
 }
