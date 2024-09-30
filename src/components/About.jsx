@@ -6,7 +6,7 @@ import javascriptIcon from '../assets/images/icons8-javascript-48.png';
 import pythonIcon from '../assets/images/icons8-python-48.png';
 import postgresqlIcon from '../assets/images/icons8-postgresql-48.png';
 import gitIcon from '../assets/images/icons8-git-50.png';
-import flaskIcon from '../assets/images/icons8-git-50.png';
+import flaskIcon from '../assets/images/icons8-flask-50.png';
 
 
 export default function About() {

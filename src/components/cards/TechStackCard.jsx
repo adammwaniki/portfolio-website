@@ -6,7 +6,7 @@ export default function TechStackCard({
     title,
 }) {
   return (
-    <div className='techstack-card-container font-accents text-[#8E6E53]'>
+    <div className='techstack-card-container font-accents text-[#8E6E53] flex flex-col items-center content-center'>
         <div className='techstack-card-img'>
             {imgSrc && imgAlt && (<img src={imgSrc} alt={imgAlt}/>)} 
         </div>
