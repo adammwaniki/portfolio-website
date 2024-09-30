@@ -13,7 +13,7 @@ export default function App() {
   return (
     <>
       <Router basename="/portfolio-website">
-        <div className="bg-[#FFFFF0] w-lvw">
+        <div className="bg-[#FFFFF0] w-full">
           <DateTimeDisplay/>
           <Navbar/>
           <Routes>

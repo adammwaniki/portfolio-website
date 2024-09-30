@@ -1,9 +1,11 @@
+import adamImage from '../assets/images/adam-image-full.png';
+
 export default function HomePage() {
   return (
     <>
     <section id="home">
       {/* Homepage container */}
-      <div className="flex font-display min-h-screen max-h-svh justify-center w-full ">  
+      <div className="flex font-display min-h-screen max-h-[screen] justify-center w-full ">  
         {/* subcontainer for all */}
         <div className="flex flex-wrap xxxxsm:h-svh sm:gap-[0.8vh] xsm:gap-[3vh] xxsm:gap-[7vh] xxxsm:gap-[12vh] xxxxsm:gap-[30vw] sm:justify-evenly sm:flex-row xxxxsm:flex-col xxxxsm:justify-center xxxxsm:content-center  font-bold w-11/12 pt-[17.6vh] md:pb-[11.7vh] ">
           {/* Container for Name, Title and Description */}
@@ -33,10 +35,10 @@ export default function HomePage() {
             <div className="flex  ">      
                 <img
                   loading="lazy"
-                  src="src/assets/1_Clipped_image_20240920_165434.png"
+                  src={adamImage}
                   className="  w-auto  md:h-[70vh] sm:h-[60vh] xxsm:h-[50vh] xxxxsm:h-[30vh]  "  
                 />
-                {/* I shall fix this image shortly*/}
+                
                 
                 {/* Name positioned at the bottom right of the image */}
                   <p className="grid place-items-end leading-[1.08] md:text-[1.3rem] xxxsm:text-[1.15rem] font-bold  text-yellow-900">Adam 

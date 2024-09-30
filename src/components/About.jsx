@@ -1,5 +1,13 @@
 //import Navbar from "./Navbar"
 import TechStackCard from "./cards/TechStackCard"
+import figmaIcon from '../assets/images/icons8-figma-48.png';
+import reactIcon from '../assets/images/react.svg';
+import javascriptIcon from '../assets/images/icons8-javascript-48.png';
+import pythonIcon from '../assets/images/icons8-python-48.png';
+import postgresqlIcon from '../assets/images/icons8-postgresql-48.png';
+import gitIcon from '../assets/images/icons8-git-50.png';
+import flaskIcon from '../assets/images/icons8-git-50.png';
+
 
 export default function About() {
   return (
@@ -35,37 +43,37 @@ export default function About() {
                 <h2 className="flex justify-between items-center w-full text-[#8E6E53] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">My Tech Stack</h2>
                 <div className="flex flex-wrap gap-[2em]">
                   <TechStackCard 
-                  imgSrc = "src/assets/icons8-figma-48.png"
+                  imgSrc = {figmaIcon}
                   imgAlt ="Figma Icon"
                   title ="Figma"
                   />
                   <TechStackCard 
-                  imgSrc = "src/assets/react.svg"
+                  imgSrc = {reactIcon}
                   imgAlt ="React JS Icon"
                   title ="React JS"
                   />
                   <TechStackCard 
-                  imgSrc = "src/assets/icons8-javascript-48.png"
+                  imgSrc = {javascriptIcon}
                   imgAlt ="Javascript Icon"
                   title ="JavaScript"
                   />
                   <TechStackCard 
-                  imgSrc = "src/assets/icons8-python-48.png"
+                  imgSrc = {pythonIcon}
                   imgAlt ="Python Icon"
                   title ="Python"
                   />
                   <TechStackCard 
-                  imgSrc = "src/assets/icons8-postgresql-48.png"
-                  imgAlt ="Postgresql Icon"
+                  imgSrc = {postgresqlIcon}
+                  imgAlt ="PostgreSQL Icon"
                   title ="PostgreSQL"
                   />
                   <TechStackCard 
-                  imgSrc = "src/assets/icons8-git-50.png"
+                  imgSrc = {gitIcon}
                   imgAlt ="Git Icon"
                   title ="Git"
                   />
                   <TechStackCard 
-                  imgSrc = "src/assets/icons8-flask-50.png"
+                  imgSrc = {flaskIcon}
                   imgAlt ="Flask Icon"
                   title ="Flask"
                   />
