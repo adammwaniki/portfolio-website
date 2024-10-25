@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import EmailCard from './EmailCard';
 import TechStackCard from "./cards/TechStackCard"
-
+import cvFile from '../assets/not-images/Adam-Mwaniki-Resume.pdf';
 import figmaIcon from '../assets/images/icons8-figma-48.png';
 import reactIcon from '../assets/images/react.svg';
 import javascriptIcon from '../assets/images/icons8-javascript-48.png';
@@ -9,6 +9,10 @@ import pythonIcon from '../assets/images/icons8-python-48.png';
 import postgresqlIcon from '../assets/images/icons8-postgresql-48.png';
 import gitIcon from '../assets/images/icons8-git-50.png';
 import flaskIcon from '../assets/images/icons8-flask-50.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faComment } from '@fortawesome/free-regular-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 
 
 export default function About() {
@@ -20,7 +24,7 @@ export default function About() {
 
   const handleCloseEmailCard = () => {
     setShowEmailCard(false);
-  };
+  };  
 
   return (
     <>
@@ -91,11 +95,29 @@ export default function About() {
                   />
                 </div>
                 <div className="font-accents font-medium flex flex-col gap-[2vh]">
-                  <button id="cv-download" className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">Download my Resume</button>
-                  <button id="github-link" className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">
+                  <div className="flex gap-2">
+                      <a 
+                        href={cvFile}
+                        download="Adam_Mwaniki_CV.pdf"
+                        className="flex justify-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out"
+                      >
+                        Download CV
+                      </a>
+                      <a 
+                        href={cvFile}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex justify-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out"
+                      >
+                        View CV
+                      </a>
+                  </div>
+
+                  <button id="github-link" className="flex justify-center content-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">
+                  <FontAwesomeIcon icon={faGithub} style={{color: "#000000",}} />
                     <a href="https://github.com/adammwaniki">Check out my Github</a>
                     </button>
-                  <button id="email-link" onClick={handleEmailClick} className="flex justify-between items-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out">Email Me</button>
+                  <button id="email-link" onClick={handleEmailClick} className="flex justify-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out"><FontAwesomeIcon icon={faComment} style={{ color: "#63E6BE" }} />Let&apos;s chat!</button>
                   <p className="flex justify-between items-center w-full text-[#C2714F] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 ">adamndegwa@protonmail.com</p>
                 </div>
               </div>

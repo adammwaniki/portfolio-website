@@ -1,35 +1,39 @@
 import { useEffect, useState } from 'react';
-//import PropTypes from 'prop-types';
 
 const DateTimeDisplay = () => {
   const [localTime, setLocalTime] = useState('');
   const [gmtTime, setGmtTime] = useState('');
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsVisible(scrollPosition < 50);
+    };
+
     const fetchTimes = () => {
       const localDate = new Date();
       const gmtDate = new Date(localDate.toLocaleString("en-US", { timeZone: "GMT" }));
-      gmtDate.setHours(gmtDate.getHours() + 3); // Adjust for GMT +3
+      gmtDate.setHours(gmtDate.getHours() + 3);
 
       setLocalTime(localDate.toLocaleString());
       setGmtTime(gmtDate.toLocaleString());
     };
 
-    fetchTimes(); // Initial fetch
-    const intervalId = setInterval(() => {
-      const localDate = new Date();
-      const gmtDate = new Date(localDate.toLocaleString("en-US", { timeZone: "GMT" }));
-      gmtDate.setHours(gmtDate.getHours() + 3); // Adjust for GMT +3
+    window.addEventListener('scroll', handleScroll);
+    fetchTimes();
+    const intervalId = setInterval(fetchTimes, 1000);
 
-      setLocalTime(localDate.toLocaleString());
-      setGmtTime(gmtDate.toLocaleString());
-    }, 1000); // Update every second
-
-    return () => clearInterval(intervalId);
+    return () => {
+      clearInterval(intervalId);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
-    <div className={`fixed top-0 right-0 p-4 font-accents`}>
+    <div className={`fixed top-0 right-0 p-4 font-accents transition-opacity duration-300 ${
+      isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+    }`}>
       <div className='flex flex-col'>
         <div className={`flex justify-between items-center w-full text-[#289661] mb-4`}>
           <div className="gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 mr-2">
@@ -50,10 +54,6 @@ const DateTimeDisplay = () => {
       </div>
     </div>
   );
-};
-
-DateTimeDisplay.propTypes = {
-  
 };
 
 export default DateTimeDisplay;
