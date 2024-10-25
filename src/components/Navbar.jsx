@@ -39,7 +39,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar font-display">
+    <nav className="navbar font-display z-50 relative pointer-events-auto">
       {/* Home Link */}
       <div className="fixed top-0 left-0 p-4 text-[#7B3E19] font-bold">
         <button
