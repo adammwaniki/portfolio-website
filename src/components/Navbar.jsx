@@ -7,6 +7,7 @@ export default function Navbar() {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      window.dispatchEvent(new Event('navClick'));
     }
   };
 
@@ -33,9 +34,7 @@ export default function Navbar() {
 
   const getButtonClass = (section) => {
     return `p-2 rounded-lg transition duration-300 ${
-      activeSection === section
-        ? 'bg-[#7878804D]'
-        : 'hover:bg-[#7878804D]'
+      activeSection === section ? 'bg-[#7878804D]' : 'hover:bg-[#7878804D]'
     }`;
   };
 

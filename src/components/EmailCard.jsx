@@ -64,7 +64,7 @@ const EmailCard = ({ onClose }) => {
                 >
                 &times;
                 </button>
-            <h2 className="text-2xl mb-4">Send Email</h2>
+            <h2 className="text-2xl mb-4">Write a message or just say Hi!</h2>
             <form onSubmit={handleSubmit}>
               {/*<div className="mb-4">
                 <label className="block mb-2">To:</label>

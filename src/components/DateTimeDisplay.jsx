@@ -4,11 +4,23 @@ const DateTimeDisplay = () => {
   const [localTime, setLocalTime] = useState('');
   const [gmtTime, setGmtTime] = useState('');
   const [isVisible, setIsVisible] = useState(true);
+  const [forceShow, setForceShow] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsVisible(scrollPosition < 50);
+      if (!forceShow) {
+        const scrollPosition = window.scrollY;
+        setIsVisible(scrollPosition < 50);
+      }
+    };
+
+    const handleNavClick = () => {
+      setForceShow(true);
+      setIsVisible(true);
+      setTimeout(() => {
+        setForceShow(false);
+        setIsVisible(window.scrollY < 50);
+      }, 3000);
     };
 
     const fetchTimes = () => {
@@ -20,6 +32,7 @@ const DateTimeDisplay = () => {
       setGmtTime(gmtDate.toLocaleString());
     };
 
+    window.addEventListener('navClick', handleNavClick);
     window.addEventListener('scroll', handleScroll);
     fetchTimes();
     const intervalId = setInterval(fetchTimes, 1000);
@@ -27,8 +40,9 @@ const DateTimeDisplay = () => {
     return () => {
       clearInterval(intervalId);
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('navClick', handleNavClick);
     };
-  }, []);
+  }, [forceShow]);
 
   return (
     <div className={`fixed top-0 right-0 p-4 font-accents transition-opacity duration-300 ${
