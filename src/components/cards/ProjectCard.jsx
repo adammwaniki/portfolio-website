@@ -20,10 +20,10 @@ export default function ProjectCard({
               {title && (<h1 className='text-[#7B3E19] text-2xl md:text-3xl font-bold mt-3'>{title}</h1>)}
               {description && (<p className='text-[#40240B] text-lg mt-3 text-wrap max-w-72 sm:min-h-[168px]'>{description}</p>)}
               <div className='flex flex-row justify-between'>
-              {buttonProject && linkProject && (<a href={linkProject} className='text-center text-[#7B3E19] bg-[#7878801F] py-2 rounded-lg
-              font-bold mt-4 hover:bg-[#D4CB92] focus:scale-95 transition-all duration-300 ease-in-out '>{buttonProject}</a>)}
-              {buttonPresentation && linkPresentation && (<a href={linkPresentation} className='text-center text-[#7B3E19] bg-[#7878801F] py-2 rounded-lg
-              font-bold mt-4 hover:bg-[#D9A441] focus:scale-95 transition-all duration-300 ease-in-out '>{buttonPresentation}</a>)}
+                {buttonProject && linkProject && (<a href={linkProject} className='text-center text-[#7B3E19] bg-[#7878801F] px-4 py-2 rounded-lg
+                font-bold mt-4 hover:bg-[#8db66266] focus:scale-95 transition-all duration-300 ease-in-out '>{buttonProject}</a>)}
+                {buttonPresentation && linkPresentation && (<a href={linkPresentation} className='text-center text-[#7B3E19] bg-[#7878801F] px-4 py-2 rounded-lg
+                font-bold mt-4 hover:bg-[#D9A44166] focus:scale-95 transition-all duration-300 ease-in-out '>{buttonPresentation}</a>)}
               </div>
           </div>
         </div>
