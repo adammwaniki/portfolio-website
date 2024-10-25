@@ -1,4 +1,4 @@
-import adamImage from '../assets/images/adam-image-full.png';
+import adamImage from '../assets/images/adam-image-full.svg';
 
 export default function HomePage() {
   return (

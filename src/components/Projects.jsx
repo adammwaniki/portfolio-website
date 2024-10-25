@@ -91,14 +91,14 @@ export default function Projects() {
         <div className="flex items-center pointer-events-auto">
           <button
             onClick={prevSlide}
-            className="absolute left-4 z-10 bg-gray-800/50 p-2 rounded-full text-white hover:bg-gray-800"
+            className="flex justify-center content-center absolute left-4 z-10 bg-gray-800/50 p-2 rounded-full text-white hover:bg-gray-800"
           >
             <span className="material-icons">skip_previous</span>
           </button>
 
           <div 
             ref={scrollRef}
-            className="flex overflow-x-auto overflow-y-hidden p-1 mt-[16vh] no-scrollbar pointer-events-auto"
+            className="flex overflow-x-auto overflow-y-hidden p-1 mt-[16vh] xl:mt-[6vh] no-scrollbar pointer-events-auto"
             style={{ scrollBehavior: 'smooth' }}
           >
             <div className="flex">
@@ -112,7 +112,7 @@ export default function Projects() {
 
           <button
             onClick={nextSlide}
-            className="absolute right-4 z-10 bg-gray-800/50 p-2 rounded-full text-white hover:bg-gray-800"
+            className="flex justify-center content-center absolute right-4 z-10 bg-gray-800/50 p-2 rounded-full text-white hover:bg-gray-800"
           >
             <span className="material-icons">skip_next</span>
           </button>
