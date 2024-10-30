@@ -12,6 +12,7 @@ import flaskIcon from '../assets/images/icons8-flask-50.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComment } from '@fortawesome/free-regular-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import {faEnvelopeOpen} from '@fortawesome/free-regular-svg-icons'
 
 
 
@@ -118,7 +119,7 @@ export default function About() {
                     <a href="https://github.com/adammwaniki">Check out my Github</a>
                     </button>
                   <button id="email-link" onClick={handleEmailClick} className="flex justify-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out"><FontAwesomeIcon icon={faComment} style={{ color: "#63E6BE" }} />Let&apos;s chat!</button>
-                  <p className="flex justify-between items-center w-full text-[#C2714F] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 ">adamndegwa@protonmail.com</p>
+                  <a href="mailto:adamndegwa@protonmail.com" className="flex justify-between items-center w-full text-[#C2714F] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:underline hover:text-[#007AFF] transition-all ease-in-out "><FontAwesomeIcon icon={faEnvelopeOpen} style={{color: "#74C0FC",}} />adamndegwa@protonmail.com</a>
                 </div>
               </div>
             </div>
