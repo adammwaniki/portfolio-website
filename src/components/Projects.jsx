@@ -1,6 +1,6 @@
 import ProjectCard from './cards/ProjectCard'
 import { useState, useRef } from 'react'
-import lawnbullLogo from '../assets/images/lawnbull-logo-white.jpg'
+import bullFlexing from '../assets/images/bull-flexing-animation.json';  
 
 export default function Projects() {
   const [, setCurrentIndex] = useState(0)
@@ -8,14 +8,15 @@ export default function Projects() {
   
   const projects = [
     {
-        imgSrc: lawnbullLogo,
+        imgSrc: bullFlexing,
         imgAlt: 'Lawnbull Limited',
         title: 'Lawnbull Limited',
         description: "This is a marketing agency that empowers clients to highlight their products and services by offering customisable marketing solutions that attract potential customers. ",
         buttonProject: 'View Project',
         buttonPresentation: 'Watch Presentation',
         linkProject: 'https://lawnbull-arcade.vercel.app/',
-        linkPresentation: 'https://lawnbull-arcade.vercel.app/'
+        linkPresentation: 'https://lawnbull-arcade.vercel.app/',
+        isLottie: true
     },
     {
       imgSrc: 'https://github.com/adammwaniki/SendIT/blob/main/client/src/assets/images/sendit-landscape-blue.jpeg?raw=true',

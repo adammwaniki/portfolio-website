@@ -1,5 +1,7 @@
 import BlogCard from './cards/BlogCard'
 import { useState, useRef } from 'react'
+import bullFlexing from '../assets/images/bull-flexing-animation.json';  
+
 
 export default function Blog() {
   const [, setCurrentIndex] = useState(0)
@@ -15,18 +17,19 @@ export default function Blog() {
       link: 'https://medium.com/@adamndegwa/my-journey-to-building-a-portfolio-website-from-scratch-2559c7211528'
     },
     {
-    imgSrc: 'https://picsum.photos/id/10/300/200',
-    imgAlt: 'The Lazy Blog',
-    title: 'The Lazy Blog',
-    description: 'Being lazy is fun when done well',
-    buttonText: 'View Blog',
-    link: 'https://github.com/adammwaniki/SendIT'
+      imgSrc: bullFlexing,
+      imgAlt: 'Animated Bull Flexing',
+      title: 'LawnBull',
+      description: "Building Lawnbull Limited's new website was an incredible journey in full-stack development. Let's take a look behind the scenes and see how I crafted an interactive site for this up-and-coming marketing agency!",
+      buttonText: 'View Blog',
+      link: 'https://medium.com/@adamndegwa/building-lawnbulls-interactive-website-a-journey-in-full-stack-development-9053bc002768',
+      isLottie: true 
     },
     {
     imgSrc: 'https://picsum.photos/id/10/300/200',
     imgAlt: 'The Lazy Blog',
     title: 'The Lazy Blog',
-    description: 'Being lazy is fun when done well',
+    description: "This Blog is loading lazily, perhaps?",
     buttonText: 'View Blog',
     link: 'https://github.com/adammwaniki/SendIT'
     },
@@ -34,7 +37,7 @@ export default function Blog() {
     imgSrc: 'https://picsum.photos/id/10/300/200',
     imgAlt: 'The Lazy Blog',
     title: 'The Lazy Blog',
-    description: 'Being lazy is fun when done well',
+    description: "This Blog is loading lazily, perhaps?",
     buttonText: 'View Blog',
     link: 'https://github.com/adammwaniki/SendIT'
     },
