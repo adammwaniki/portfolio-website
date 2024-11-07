@@ -14,8 +14,8 @@ export default function Projects() {
         description: "This is a marketing agency that empowers clients to highlight their products and services by offering customisable marketing solutions that attract potential customers. ",
         buttonProject: 'View Project',
         buttonPresentation: 'Watch Presentation',
-        linkProject: 'https://lawnbull-arcade.vercel.app/',
-        linkPresentation: 'https://lawnbull-arcade.vercel.app/',
+        linkProject: 'https://lawnbull.com',
+        linkPresentation: 'https://lawnbull.com',
         isLottie: true
     },
     {
