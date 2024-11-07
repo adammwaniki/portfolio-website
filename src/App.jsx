@@ -6,13 +6,10 @@ import Navbar from "./components/Navbar"
 import DateTimeDisplay from "./components/DateTimeDisplay"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-
 export default function App() {
-  
-
   return (
     <>
-      <Router basename="/portfolio-website">
+      <Router>
         <div className="bg-[#FFFFF0] w-full">
           <DateTimeDisplay/>
           <Navbar/>
