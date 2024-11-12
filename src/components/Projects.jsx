@@ -81,7 +81,7 @@ export default function Projects() {
   return (
     <section id="projects" className="relative z-0">
       {/* Mobile View */}
-      <div className="md:hidden flex flex-col gap-4 mt-[16vh] p-4">
+      <div className="md:hidden flex flex-col gap-4 p-4 pt-20">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

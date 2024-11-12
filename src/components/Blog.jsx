@@ -72,7 +72,7 @@ export default function Blog() {
   return (
     <section id="blog">
       {/* Mobile View */}
-      <div className="md:hidden flex flex-col gap-4 mt-[16vh] p-4">
+      <div className="md:hidden flex flex-col gap-4 p-4 pt-20">
         {blogs.map((blog, index) => (
           <BlogCard key={index} {...blog} />
         ))}
