@@ -32,7 +32,7 @@ export default function HomePage() {
             </div>
           </div>
             {/* Section for Image and Name */}
-            <div className="flex ml-16 md:ml-0 mb-12 md:mb-0 xxxxsm:-mt-10 md:mt-24 lgs:-mt-1">      
+            <div className="flex ml-16 md:ml-0 mb-12 md:mb-0 xxxxsm:-mt-10 md:mt-20 lgs:-mt-1">      
                 <img
                   loading="lazy"
                   src={adamImage}
