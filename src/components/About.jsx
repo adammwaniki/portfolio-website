@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import EmailCard from './EmailCard';
 import TechStackCard from "./cards/TechStackCard"
-import cvFile from '../assets/not-images/Adam-Mwaniki-Resume.pdf';
+import cvFile from '../assets/not-images/Adam_Mwaniki_Resume.pdf';
 import figmaIcon from '../assets/images/icons8-figma-48.png';
 import reactIcon from '../assets/images/react.svg';
 import javascriptIcon from '../assets/images/icons8-javascript-48.png';
@@ -99,7 +99,7 @@ export default function About() {
                   <div className="flex gap-2">
                       <a 
                         href={cvFile}
-                        download="Adam_Mwaniki_CV.pdf"
+                        download="Adam_Mwaniki_Resume.pdf" 
                         className="flex justify-center w-full text-[#007AFF] gap-2.5 px-3 py-1.5 whitespace-nowrap rounded-md bg-zinc-500 bg-opacity-10 hover:bg-opacity-40 transition duration-300 ease-in-out"
                       >
                         Download CV
