@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <Router>
-        <div className="bg-[#FFFFF0] w-full">
+        <div className="bg-[#FFFFF0] w-full min-h-screen overflow-x-hidden">
           <DateTimeDisplay/>
           <Navbar/>
           <Routes>
