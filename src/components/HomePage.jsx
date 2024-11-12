@@ -36,7 +36,7 @@ export default function HomePage() {
                 <img
                   loading="lazy"
                   src={adamImage}
-                  className="  w-auto  md:h-[35vh] lgs:h-[70vh] sm:h-[60vh] xxsm:h-[35vh] xxxxsm:h-[30vh]  "  
+                  className="  w-auto  md:h-[35vh] lgs:h-[70vh] sm:h-[60vh] h-[30vh]  "  
                 />
                 
                 
