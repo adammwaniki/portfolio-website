@@ -5,7 +5,7 @@ export default function HomePage() {
     <>
     <section id="home">
       {/* Homepage container */}
-      <div className="flex font-display min-h-screen max-h-[screen] justify-center w-full ">  
+      <div className="flex font-display min-h-[100svh] justify-center w-full ">  
         {/* subcontainer for all */}
         <div className="flex flex-col lg:flex-row w-11/12 sm:gap-[0.8vh] xsm:gap-[3vh] xxsm:gap-[7vh] xxxsm:gap-[12vh] xxxxsm:gap-[30vw] justify-center items-center pt-[17.6vh] md:pb-[11.7vh]">
           {/* Container for Name, Title and Description */}
