@@ -7,7 +7,7 @@ export default function HomePage() {
       {/* Homepage container */}
       <div className="flex font-display min-h-screen max-h-[screen] justify-center w-full ">  
         {/* subcontainer for all */}
-        <div className="flex flex-wrap xxxxsm:h-svh sm:gap-[0.8vh] xsm:gap-[3vh] xxsm:gap-[7vh] xxxsm:gap-[12vh] xxxxsm:gap-[30vw] sm:justify-evenly sm:flex-row flex-col xxxxsm:justify-center xxxxsm:content-center  font-bold w-11/12 pt-[17.6vh] md:pb-[11.7vh] ">
+        <div className="flex flex-col lg:flex-row w-11/12 sm:gap-[0.8vh] xsm:gap-[3vh] xxsm:gap-[7vh] xxxsm:gap-[12vh] xxxxsm:gap-[30vw] justify-center items-center pt-[17.6vh] md:pb-[11.7vh]">
           {/* Container for Name, Title and Description */}
           <div className="flex flex-col 2xl:gap-32 xl:gap-24 lg:gap-20 md:gap-20 sm:gap-14  xxsm:gap-10 xxxsm:gap-6 xxxxsm:gap-4 ">
             {/* Section for Name and Title */}
@@ -32,11 +32,11 @@ export default function HomePage() {
             </div>
           </div>
             {/* Section for Image and Name */}
-            <div className="flex ml-16 md:ml-0 mb-12 md:mb-0  ">      
+            <div className="flex ml-16 md:ml-0 mb-12 md:mb-0 xxxxsm:-mt-10 md:mt-24 lgs:-mt-1">      
                 <img
                   loading="lazy"
                   src={adamImage}
-                  className="  w-auto  md:h-[70vh] sm:h-[60vh] xxsm:h-[50vh] xxxxsm:h-[30vh]  "  
+                  className="  w-auto  md:h-[35vh] lgs:h-[70vh] sm:h-[60vh] xxsm:h-[35vh] xxxxsm:h-[30vh]  "  
                 />
                 
                 
